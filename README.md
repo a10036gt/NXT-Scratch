@@ -21,6 +21,15 @@
 
 Built with visual block-based programming with C++ code preview, NXT:Scratch makes robotics accessible to beginners while providing powerful features for advanced users.
 
+## 💡 Why This Project Exists
+
+> In 2025, our school planned a robotics camp for elementary students from across the district. However, the timing coincided with the WRO competition season, leaving our EV3 and SPIKE Prime sets unavailable. Looking at the NXT robots gathering dust in our storage room, we saw an opportunity.<br><br>
+**The problem?** Today's students learn programming with Scratch, but NXT only supports outdated software like NXT-G. (EV3-G or Open Roberta works fine, but kids still prefer Scratch, not LabVIEW or Blockly) The gap between what students know and what NXT offers was too large.<br><br>
+**The solution:** Build a modern, Scratch-like programming environment specifically for NXT.<br><br>
+After successful internal testing and realizing that many schools and regions still actively use NXT for classes and competitions (TESSLAB Darren tell me about his friend still use for competitions😯), we decided to share this tool with the broader educational community.
+
+**NXT:Scratch bridges the past and present** - giving new life to legacy hardware while providing students with the modern programming experience they deserve.
+
 ## ✨ Features
 
 ### 🧩 Visual Programming
