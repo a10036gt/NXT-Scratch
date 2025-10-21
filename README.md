@@ -165,8 +165,8 @@ Created: October 10, 2025
 
 ## ⚠️ Disclaimer
 
-**LEGO®** is a trademark of the LEGO Group.  
-**Scratch** is developed by the MIT Media Lab.
+**LEGO®** and **MINDSTORMS®** is a trademark of the LEGO Group.  
+**Scratch** is developed by the MIT Media Lab/Scratch Foundation.
 
 This independent project is **not affiliated with or endorsed by** either organization. It is a community-driven tool designed to support LEGO® NXT users.
 
