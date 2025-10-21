@@ -1,7 +1,7 @@
 # NXT:Scratch
 <div align="center">
-<img width="100%" height="100%" alt="image" src="https://github.com/user-attachments/assets/cc87eef0-5b80-4720-99c8-eee472cd3f0d" />
-
+<img width="80%" height="80%" alt="banner" src="https://github.com/user-attachments/assets/d54fbf87-0c16-45e7-bd8f-a480f67632d6" />
+ 
 **A Modern Scratch-like Programming Environment for LEGO® NXT**
 
 [![Platform](https://img.shields.io/badge/Platform-Windows%20XP--11-blue.svg)](https://github.com/a10036gt/nxt-scratch)
@@ -15,17 +15,18 @@
 ---
 
 ## 🎯 Overview
+<img width="100%" height="100%" alt="image" src="https://github.com/user-attachments/assets/cc87eef0-5b80-4720-99c8-eee472cd3f0d" />
 
 **NXT:Scratch** is a freeware brings a modern, Scratch-like programming experience to LEGO® NXT users. It supports Windows XP through Windows 11, keeping classic robots easy and fun to code.
 
-Built with visual block-based programming, NXT:Scratch makes robotics accessible to beginners while providing powerful features for advanced users.
+Built with visual block-based programming with C++ code preview, NXT:Scratch makes robotics accessible to beginners while providing powerful features for advanced users.
 
 ## ✨ Features
 
 ### 🧩 Visual Programming
 - <img width="80%" height="80%" alt="image" src="https://github.com/user-attachments/assets/41e6b373-1ee8-4fbf-b5e4-bf4979313212" />
 - **Scratch-like Interface**: Familiar to Scratch / EV3 Classroom / SPIKE App users
-- **Real-time Code Generation**: Instantly see NXC (Not eXactly C) code as you build
+- **Real-time Code Generation**: Instantly see NXC (Not eXactly C, BricxCC) code as you build
 
 ### 🤖 NXT Integration
 - <img width="35%" height="35%" alt="image" src="https://github.com/user-attachments/assets/5b4e05ab-4a8d-477a-a6b7-14f4620e2ae9" />
