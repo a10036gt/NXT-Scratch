@@ -8,7 +8,7 @@
 [![NW.js](https://img.shields.io/badge/NW.js-0.14.7-green.svg)](https://nwjs.io/)
 [![License: Freeware](https://img.shields.io/badge/License-Freeware-brightgreen.svg)](LICENSE)
 
- • [Features](#features) • [Download](#download) • [Getting Started](#getting-started) • [Contributing](#contributing)
+ • [Features](#-features) • [Download](#-download) • [Getting Started](#-getting-started) • [Contributing](#-contributing)
 
 </div>
 
