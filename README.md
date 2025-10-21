@@ -118,7 +118,7 @@ var I18N_LANG_DISPLAY = {
 };
 ```
 
-*i18n js can be found and packaged in package.nw . If you want to submit your translation to the official version, please create a pull request.
+*Internationalization js can be found and packaged in package.nw (Using 7-zip to packaged or extract). If you want to submit your translation to the official version, please create a pull request.
 
 ## 🤝 Contributing
 - 🐛 Report bugs and issues
