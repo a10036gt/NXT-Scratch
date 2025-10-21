@@ -33,6 +33,23 @@ Built with visual block-based programming, NXT:Scratch makes robotics accessible
 - **One-Click Download**: Upload and run programs instantly
 - **NXT Tools Integration**: Built-in file manager and screen capture
 
+### 💻 Wide Compatibility
+
+- **From Windows XP to Windows 11** - NXT:Scratch runs on every Windows version released in the past two decades.
+- #### Verified Support (Until Win11 24H2):
+| Windows Version | Year | Status |
+|----------------|------|--------|
+| Windows XP | 2001 | ✅ Tested |
+| Windows Vista | 2006 | ✅ Tested |
+| Windows 7 | 2009 | ✅ Tested |
+| Windows 8/8.1 | 2012 | ✅ Tested |
+| Windows 10 | 2015 | ✅ Tested |
+| Windows 11 | 2021 | ✅ Tested |
+
+![Testing result](https://github.com/user-attachments/assets/a8dd3d4d-0cbc-45a9-9efe-c7888948fb5e)
+
+- **No computer left behind** - If your school computer from 2005 still runs, so does NXT:Scratch.
+
 ### 🌍 Internationalization
 - **Multi-language Support**: English, 繁體中文 (Traditional Chinese)
 - **Easy to Extend**: Add new languages without modifying core code
