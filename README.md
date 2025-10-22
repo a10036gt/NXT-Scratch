@@ -7,6 +7,7 @@
 [![Platform](https://img.shields.io/badge/Platform-Windows%20XP--11-blue.svg)](https://github.com/a10036gt/nxt-scratch)
 [![NW.js](https://img.shields.io/badge/NW.js-0.14.7-green.svg)](https://nwjs.io/)
 [![License: Freeware](https://img.shields.io/badge/License-Freeware-brightgreen.svg)](LICENSE)
+[![Donate: KoFi](https://img.shields.io/badge/Donate-Ko--fi-F16061.svg?logo=ko-fi)](https://ko-fi.com/a10036kf)
 
  • [Features](#-features) • [Download](#-download) • [Getting Started](#-getting-started) • [Contributing](#-contributing)
 
@@ -29,6 +30,8 @@ Built with visual block-based programming with C++ code preview, NXT:Scratch mak
 After successful internal testing and realizing that many schools and regions still actively use NXT for classes and competitions (TESSLAB Darren tell me about his friend still use for competitions😯), we decided to share this tool with the broader educational community.
 
 **NXT:Scratch bridges the past and present** - giving new life to legacy hardware while providing students with the modern programming experience they deserve.
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/a10036kf)
 
 ## ✨ Features
 
@@ -162,6 +165,14 @@ See the [LICENSE](LICENSE) file for complete terms.
 - Project: [NXT:Scratch](https://github.com/a10036gt/nxt-scratch)
 
 Created: October 10, 2025
+
+## 💝 Support This Project
+
+NXT:Scratch is **free software** and always will be. If you find it useful, consider supporting development:
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/a10036kf)
+
+Your support helps maintain and improve NXT:Scratch for the educational community. Thank you! 🙏
 
 ## ⚠️ Disclaimer
 
