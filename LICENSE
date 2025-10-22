@@ -1,13 +1,13 @@
-FREEWARE LICENSE WITH PLATFORM RESTRICTION
+# FREEWARE LICENSE WITH PLATFORM RESTRICTION
 
-Copyright (c) 2025 Anthony Hsu
+Copyright (c) 2025 Anthony Hsu  
 All rights reserved.
 
 This software is provided as FREEWARE for use with LEGO® NXT hardware.
 
 ================================================================================
 
-GRANT OF LICENSE
+## GRANT OF LICENSE
 
 Subject to the terms and conditions of this License, the copyright holder 
 grants you a limited, non-exclusive, non-transferable, revocable license to:
@@ -26,38 +26,45 @@ grants you a limited, non-exclusive, non-transferable, revocable license to:
 
 ================================================================================
 
-RESTRICTIONS
+## RESTRICTIONS
 
 You may NOT:
 
-1. PLATFORM RESTRICTION
-   Use this software with any robotics platform other than LEGO® NXT 1.0 or 
-   2.0, including but not limited to: LEGO® EV3, SPIKE Prime, Arduino, 
-   Raspberry Pi, VEX, or any other robotics hardware.
+### 1. PLATFORM RESTRICTION
 
-2. SOURCE CODE
-   - Access, view, or obtain the source code
-   - Reverse engineer, decompile, or disassemble the software
-   - Attempt to derive the source code by any means
+This software is DESIGNED AND TESTED exclusively for LEGO® NXT 1.0 and 
+NXT 2.0 hardware. Use with any other robotics platform (including but not 
+limited to LEGO® EV3, SPIKE Prime, Arduino, Raspberry Pi, VEX, or any other 
+robotics hardware) is not supported and may violate this license.
 
-3. MODIFICATION
-   - Modify, adapt or alter the software
-   - Create derivative works based on the software
-   - Remove, obscure, or alter any proprietary notices
+### 2. SOURCE CODE
 
-4. REDISTRIBUTION
-   - Sell, rent, lease, or sublicense the software
-   - Distribute as part of a commercial product without permission
-   - Redistribute modified versions
-   - Use the software to develop competing products
+- Access, view, or obtain the source code
+- Reverse engineer, decompile, or disassemble the software, except to the 
+  extent expressly permitted by applicable law
+- Attempt to derive the source code by any means
 
-5. CIRCUMVENTION
-   - Bypass or disable any platform restrictions or security features
-   - Use the software in any manner that violates this license
+### 3. MODIFICATION
+
+- Modify, adapt or alter the software
+- Create derivative works based on the software
+- Remove, obscure, or alter any proprietary notices
+
+### 4. REDISTRIBUTION
+
+- Sell, rent, lease, or sublicense the software
+- Distribute as part of a commercial product without permission
+- Redistribute modified versions
+- Use the software to develop competing products
+
+### 5. CIRCUMVENTION
+
+- Bypass or disable any platform restrictions or security features
+- Use the software in any manner that violates this license
 
 ================================================================================
 
-INTELLECTUAL PROPERTY
+## INTELLECTUAL PROPERTY
 
 1. This software is licensed, not sold. All rights, title, and interest in 
    and to the software, including all intellectual property rights, remain 
@@ -67,28 +74,34 @@ INTELLECTUAL PROPERTY
 
 3. No rights are granted except as expressly set forth in this license.
 
-================================================================================
-
-EDUCATIONAL AND COMMERCIAL USE
-
-1. EDUCATIONAL USE
-   Schools, educational institutions, and non-profit organizations may use 
-   this software free of charge for educational purposes with LEGO® NXT 
-   hardware.
-
-2. COMMERCIAL USE
-   Commercial robotics education providers may use this software in paid 
-   courses or workshops, provided:
-   - The software is used exclusively with LEGO® NXT hardware
-   - The software itself is not resold
-   - Proper attribution is provided
-
-3. For bulk licensing or custom commercial arrangements, contact the 
-   copyright holder.
+4. **No patent rights are granted under this license.**
 
 ================================================================================
 
-USER-CREATED CONTENT
+## EDUCATIONAL AND COMMERCIAL USE
+
+### 1. EDUCATIONAL USE
+
+Schools, educational institutions, and non-profit organizations may use 
+this software free of charge for educational purposes with LEGO® NXT 
+hardware.
+
+### 2. COMMERCIAL USE
+
+Commercial robotics education providers may use this software in paid 
+courses or workshops, provided:
+- The software is used exclusively with LEGO® NXT hardware
+- The software itself is not resold
+- Proper attribution is provided
+
+### 3. BULK LICENSING
+
+For bulk licensing or custom commercial arrangements, contact the 
+copyright holder.
+
+================================================================================
+
+## USER-CREATED CONTENT
 
 You retain all rights to programs, projects, and content you create using 
 this software. The copyright holder claims no ownership over your creations.
@@ -98,36 +111,47 @@ rights to the software itself.
 
 ================================================================================
 
-THIRD-PARTY COMPONENTS
+## THIRD-PARTY COMPONENTS
 
 This software incorporates the following third-party components:
 
-1. Scratch Blocks
-   Copyright (c) Scratch Foundation
-   Licensed under Apache License 2.0
-   https://github.com/scratchfoundation/scratch-blocks/
+### 1. Scratch Blocks
 
-2. NW.js
-   Copyright (c) NW.js Authors
-   Licensed under MIT License
-   https://github.com/nwjs/nw.js
+- **Usage:** Integrated as library
+- **Copyright:** (c) Scratch Foundation
+- **License:** Apache License 2.0
+- **URL:** https://github.com/scratchfoundation/scratch-blocks/
 
-3. CodeMirror
-   Copyright (c) Marijn Haverbeke
-   Licensed under MIT License
-   https://github.com/codemirror/codemirror5
+### 2. NW.js
 
-4. NXC/NBC Compiler
-   Copyright (c) John Hansen
-   Licensed under Mozilla Public License 1.1
-   http://bricxcc.sourceforge.net
+- **Usage:** Application runtime framework
+- **Copyright:** (c) NW.js Authors
+- **License:** MIT License
+- **URL:** https://github.com/nwjs/nw.js
+
+### 3. CodeMirror
+
+- **Usage:** Code editor component
+- **Copyright:** (c) Marijn Haverbeke
+- **License:** MIT License
+- **URL:** https://github.com/codemirror/codemirror5
+
+### 4. NXC/NBC Compiler
+
+- **Usage:** External executable (process invocation only, no source code modification)
+- **Copyright:** (c) John Hansen
+- **License:** Mozilla Public License 1.1
+- **URL:** http://bricxcc.sourceforge.net
 
 Each component is subject to its respective license terms. See the LICENSE 
 folder in the distribution for complete license texts.
 
+**NOTICE:** This product includes software developed by the Scratch Foundation, 
+NW.js Authors, Marijn Haverbeke, and John Hansen.
+
 ================================================================================
 
-DISCLAIMER OF WARRANTIES
+## DISCLAIMER OF WARRANTIES
 
 THE SOFTWARE IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
@@ -139,21 +163,26 @@ THE COPYRIGHT HOLDER DOES NOT WARRANT THAT:
 - Any errors will be corrected
 - Results will be accurate or reliable
 
-TRADEMARK DISCLAIMER:
+### TRADEMARK DISCLAIMER
 
-LEGO® and MINDSTORMS® are trademarks of the LEGO Group.
-Scratch is a trademark of the MIT Media Lab.
+**LEGO®** and **MINDSTORMS®** are trademarks of the LEGO Group.  
+**Scratch** is a trademark of the MIT Media Lab.
 
 This software is independently developed and is not affiliated with, 
 sponsored by, or endorsed by the LEGO Group or MIT Media Lab.
 
+The use of "NXT" and "Scratch" in the software name is purely descriptive 
+to indicate compatibility and functionality, and does not imply endorsement 
+by the trademark holders.
+
 ================================================================================
 
-LIMITATION OF LIABILITY
+## LIMITATION OF LIABILITY
 
 TO THE MAXIMUM EXTENT PERMITTED BY LAW, IN NO EVENT SHALL THE COPYRIGHT 
 HOLDER BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR 
 PUNITIVE DAMAGES, INCLUDING BUT NOT LIMITED TO:
+
 - Loss of profits, revenue, data, or use
 - Cost of substitute goods or services
 - Business interruption
@@ -166,7 +195,7 @@ apply to you.
 
 ================================================================================
 
-TERMINATION
+## TERMINATION
 
 1. This license is effective until terminated.
 
@@ -182,20 +211,22 @@ TERMINATION
 
 ================================================================================
 
-GOVERNING LAW
+## GOVERNING LAW
 
 This license shall be governed by and construed in accordance with the laws 
-of the jurisdiction in which the copyright holder resides, without regard to 
-its conflict of law provisions.
+of Taiwan (Republic of China), without regard to its conflict of law provisions.
+
+Disputes arising from this license shall be subject to the exclusive 
+jurisdiction of the courts of Taiwan.
 
 ================================================================================
 
-TRADEMARK NOTICES
+## TRADEMARK NOTICES
 
-LEGO® and MINDSTORMS® are registered trademarks of the LEGO Group, which 
+**LEGO®** and **MINDSTORMS®** are registered trademarks of the LEGO Group, which 
 does not sponsor, authorize, or endorse this software.
 
-Scratch is a trademark of the Massachusetts Institute of Technology (MIT), 
+**Scratch** is a trademark of the Massachusetts Institute of Technology (MIT), 
 which does not sponsor, authorize, or endorse this software.
 
 This software is independently developed and is not affiliated with or 
@@ -203,19 +234,16 @@ endorsed by the LEGO Group or MIT Media Lab.
 
 ================================================================================
 
-CONTACT INFORMATION
+## CONTACT INFORMATION
 
 For questions, permissions, or licensing inquiries:
 
-GitHub: https://github.com/a10036gt
-Project: https://github.com/a10036gt/nxt-scratch
-
-For the complete End-User License Agreement (EULA), see EULA.txt in the 
-software distribution.
+- **GitHub:** https://github.com/a10036gt
+- **Project:** https://github.com/a10036gt/nxt-scratch
 
 ================================================================================
 
-ENTIRE AGREEMENT
+## ENTIRE AGREEMENT
 
 This license constitutes the entire agreement between you and the copyright 
 holder regarding the software and supersedes all prior agreements and 
@@ -223,12 +251,12 @@ understandings.
 
 ================================================================================
 
-ACKNOWLEDGMENT
+## ACKNOWLEDGMENT
 
 BY USING THIS SOFTWARE, YOU ACKNOWLEDGE THAT YOU HAVE READ THIS LICENSE, 
 UNDERSTAND IT, AND AGREE TO BE BOUND BY ITS TERMS AND CONDITIONS.
 
 ================================================================================
 
-Version 1.0
-Last Updated: October 10, 2025
+**Version 1.1**  
+**Last Updated: October 22, 2025**
