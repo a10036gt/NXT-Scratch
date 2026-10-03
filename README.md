@@ -15,6 +15,17 @@
 
 ---
 
+> 🏛️ **Officially Featured by Tufts University CEEO**
+>
+> NXT:Scratch is officially featured on
+> **[Engineering with Bricks](https://www.engineeringwithbricks.com/platforms/nxt)**,
+> a robotics education resource platform curated by the
+> **Tufts University Center for Engineering Education and Outreach (CEEO)**.
+>
+> This recognition places NXT alongside educational resources used by the LEGO® robotics and engineering education community.
+
+---
+
 ## 🎯 Overview
 <img width="100%" height="100%" alt="image" src="https://github.com/user-attachments/assets/cc87eef0-5b80-4720-99c8-eee472cd3f0d" />
 
@@ -180,6 +191,8 @@ Your support helps maintain and improve NXT:Scratch for the educational communit
 **Scratch** is developed by the MIT Media Lab/Scratch Foundation.
 
 This independent project is **not affiliated with or endorsed by** either organization. It is a community-driven tool designed to support LEGO® NXT users.
+
+NXT:Scratch has been independently featured by Tufts University CEEO through its Engineering with Bricks resource platform.
 
 ---
 
