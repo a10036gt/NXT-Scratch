@@ -27,7 +27,7 @@
 ---
 
 ## 🎯 Overview
-<img width="100%" height="100%" alt="image" src="https://github.com/user-attachments/assets/cc87eef0-5b80-4720-99c8-eee472cd3f0d" />
+<img width="100%" height="100%" alt="image" src="https://github.com/user-attachments/assets/4f7cf0d9-eddf-49a2-b5e6-82a7e5292641" />
 
 **NXT:Scratch** is a freeware brings a modern, Scratch-like programming experience to LEGO® NXT users. It supports Windows XP through Windows 11, keeping classic robots easy and fun to code.
 
