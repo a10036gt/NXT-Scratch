@@ -75,7 +75,7 @@ After successful internal testing and realizing that many schools and regions st
 - **No computer left behind** - If your school computer from 2005 still runs, so does NXT:Scratch.
 
 ### 🌍 Internationalization
-- **Multi-language Support**: English, 繁體中文 (Traditional Chinese)
+- **Multi-language Support**: English, 繁體中文 (Traditional Chinese), Deutsch (German), Français (French)
 - **Easy to Extend**: Add new languages without modifying core code
 
 ### 💾 Project Management
@@ -122,11 +122,13 @@ Download the latest version from the [Releases](https://github.com/a10036gt/nxt-
 
 Adding a new language is easy! Edit `translations.js` and `scratch_msgs.js`:
 
+The available locale codes are `en`, `zh-tw`, `de`, and `fr`. Each locale has both UI translations in `translations.js` and block translations in `scratch_msgs.js`, and is registered by its native name in `I18N_LANG_DISPLAY`.
+
 ```javascript
 //scratch_msgs.js:
-Blockly.ScratchMsgs.locales["en"] = { /* English translations */ },
-Blockly.ScratchMsgs.locales["zh-tw"] = { /* Chinese translations */ },
-Blockly.ScratchMsgs.locales["your-lang"] = { /* Your translations */ },
+Blockly.ScratchMsgs.locales["en"] = { /* English translations */ };
+Blockly.ScratchMsgs.locales["zh-tw"] = { /* Chinese translations */ };
+Blockly.ScratchMsgs.locales["your-lang"] = { /* Your translations */ };
 
 //translations.js:
 var I18N_TRANSLATIONS = {
@@ -142,7 +144,15 @@ var I18N_LANG_DISPLAY = {
 };
 ```
 
-*Internationalization js can be found and packaged in package.nw (Using 7-zip to packaged or extract). If you want to submit your translation to the official version, please create a pull request.
+The internationalization files are packaged in `package.nw`, which can be extracted and repackaged using 7-Zip. Keep each file at its original location in the archive. Adding translations to this repository does not update an already installed application; they must also be included in its `package.nw`.
+
+When adding or reviewing a locale, use the English dictionaries as the key reference, translate every entry, and preserve placeholders such as `%1`, `%2`, literal percent signs, and line breaks. Review the NXT-specific motor, sensor, display, and sound terms as well as the standard Scratch blocks. The German and French standard block messages are adapted from Scratch Blocks, with NXT-specific additions and wording corrections; the source reference is in `scratch_msgs.js` and its license is in [licenses/scratch-blocks.txt](licenses/scratch-blocks.txt).
+
+To submit translations for inclusion in the official version:
+
+1. Fork this repository if you do not have write access, then create a branch for your translation changes from `main`.
+2. Review the translations, check JavaScript syntax and placeholder consistency, then commit and push that branch to your fork (or this repository if you have write access).
+3. Open a pull request targeting `a10036gt/NXT-Scratch` on `main`, and describe the languages added and the checks performed. The maintainer can then review and merge the changes.
 
 ## 🤝 Contributing
 - 🐛 Report bugs and issues
