@@ -31,20 +31,14 @@
         '}'
     ].join('\n');
     style.textContent += [
-        '.nxtSidebarToggle { position: absolute; top: 4px; left: 4px; width: 32px; height: 32px;',
-        '  border: none; border-radius: 50%; padding: 0; background: #774dcb;',
-        '  background: linear-gradient(45deg, #774dcb, #7b1fa2); color: #fff;',
-        '  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); cursor: pointer; z-index: 2;',
-        '  display: flex; align-items: center; justify-content: center;',
-        '  transition: transform 0.2s ease, box-shadow 0.2s ease; }',
-        '.nxtSidebarToggle:hover { transform: translateY(-2px);',
-        '  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25); }',
-        '.nxtSidebarToggle:active { transform: translateY(0); }',
-        '.nxtSidebarToggle:focus { outline: none;',
-        '  box-shadow: 0 0 0 3px #fff, 0 0 0 5px #774dcb; }',
-        '.nxtSidebarToggle svg { width: 18px; height: 18px; pointer-events: none; }',
-        '@media (prefers-reduced-motion: reduce) { .nxtSidebarToggle { transition: none; } }',
-        '.blocklyToolboxDiv.nxtSidebarCollapsible .scratchCategoryMenu { padding-top: 40px; }',
+        '.nxtSidebarToggle { position: absolute; bottom: 12px; left: 2px; width: 36px; height: 36px;',
+        '  border: none; border-radius: 50%; padding: 0; margin: 0; background: transparent;',
+        '  box-shadow: none; cursor: pointer; z-index: 2; line-height: 0;',
+        '  -webkit-appearance: none; appearance: none; }',
+        '.nxtSidebarToggle:hover, .nxtSidebarToggle:active, .nxtSidebarToggle:focus {',
+        '  outline: none; box-shadow: none; transform: none; background: transparent; }',
+        '.nxtSidebarToggle svg { display: block; width: 36px; height: 36px; pointer-events: none; }',
+        '.blocklyToolboxDiv.nxtSidebarCollapsible .scratchCategoryMenu { padding-bottom: 56px; }',
         '.blocklyToolboxDiv.nxtSidebarCollapsed .scratchCategoryMenu { display: none; }'
     ].join('\n');
     document.head.appendChild(style);
@@ -108,8 +102,8 @@
             fr: ['Replier la palette de blocs', 'Afficher la palette de blocs']
         };
         var label = (labels[locale] || labels.en)[toolbox.nxtSidebarCollapsed_ ? 1 : 0];
-        toolbox.nxtSidebarChevron_.setAttribute('d', toolbox.nxtSidebarCollapsed_ ? 'M9 5l7 7-7 7' : 'M15 5l-7 7 7 7');
-        toolbox.nxtSidebarToggle_.title = label;
+        toolbox.nxtSidebarChevron_.setAttribute('d', toolbox.nxtSidebarCollapsed_ ? 'M15 11l7 7-7 7' : 'M21 11l-7 7 7 7');
+        // Use the accessible label without a native rectangular hover tooltip.
         toolbox.nxtSidebarToggle_.setAttribute('aria-label', label);
         toolbox.nxtSidebarToggle_.setAttribute('aria-expanded', String(!toolbox.nxtSidebarCollapsed_));
     }
@@ -126,13 +120,27 @@
             button.type = 'button';
             button.className = 'nxtSidebarToggle';
             var icon = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
-            icon.setAttribute('viewBox', '0 0 24 24');
+            icon.setAttribute('viewBox', '0 0 36 36');
             icon.setAttribute('aria-hidden', 'true');
             icon.setAttribute('focusable', 'false');
+            var rim = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+            rim.setAttribute('cx', '18');
+            rim.setAttribute('cy', '18');
+            rim.setAttribute('r', '18');
+            rim.setAttribute('fill', '#231f20');
+            rim.setAttribute('opacity', '0.15');
+            icon.appendChild(rim);
+            var face = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+            face.setAttribute('cx', '18');
+            face.setAttribute('cy', '18');
+            face.setAttribute('r', '16');
+            face.setAttribute('fill', '#fff');
+            icon.appendChild(face);
             var chevron = document.createElementNS('http://www.w3.org/2000/svg', 'path');
             chevron.setAttribute('fill', 'none');
-            chevron.setAttribute('stroke', 'currentColor');
-            chevron.setAttribute('stroke-width', '2.5');
+            chevron.setAttribute('stroke', '#575e75');
+            chevron.setAttribute('opacity', '0.75');
+            chevron.setAttribute('stroke-width', '1.5');
             chevron.setAttribute('stroke-linecap', 'round');
             chevron.setAttribute('stroke-linejoin', 'round');
             icon.appendChild(chevron);
