@@ -32,9 +32,18 @@
     ].join('\n');
     style.textContent += [
         '.nxtSidebarToggle { position: absolute; top: 4px; left: 4px; width: 32px; height: 32px;',
-        '  border: 1px solid #ccc; border-radius: 6px; background: #fff; color: #555;',
-        '  cursor: pointer; font-size: 20px; z-index: 2; }',
-        '.nxtSidebarToggle:focus { outline: 2px solid #696cff; }',
+        '  border: none; border-radius: 50%; padding: 0; background: #774dcb;',
+        '  background: linear-gradient(45deg, #774dcb, #7b1fa2); color: #fff;',
+        '  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); cursor: pointer; z-index: 2;',
+        '  display: flex; align-items: center; justify-content: center;',
+        '  transition: transform 0.2s ease, box-shadow 0.2s ease; }',
+        '.nxtSidebarToggle:hover { transform: translateY(-2px);',
+        '  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25); }',
+        '.nxtSidebarToggle:active { transform: translateY(0); }',
+        '.nxtSidebarToggle:focus { outline: none;',
+        '  box-shadow: 0 0 0 3px #fff, 0 0 0 5px #774dcb; }',
+        '.nxtSidebarToggle svg { width: 18px; height: 18px; pointer-events: none; }',
+        '@media (prefers-reduced-motion: reduce) { .nxtSidebarToggle { transition: none; } }',
         '.blocklyToolboxDiv.nxtSidebarCollapsible .scratchCategoryMenu { padding-top: 40px; }',
         '.blocklyToolboxDiv.nxtSidebarCollapsed .scratchCategoryMenu { display: none; }'
     ].join('\n');
@@ -99,7 +108,7 @@
             fr: ['Replier la palette de blocs', 'Afficher la palette de blocs']
         };
         var label = (labels[locale] || labels.en)[toolbox.nxtSidebarCollapsed_ ? 1 : 0];
-        toolbox.nxtSidebarToggle_.textContent = toolbox.nxtSidebarCollapsed_ ? '\u203a' : '\u2039';
+        toolbox.nxtSidebarChevron_.setAttribute('d', toolbox.nxtSidebarCollapsed_ ? 'M9 5l7 7-7 7' : 'M15 5l-7 7 7 7');
         toolbox.nxtSidebarToggle_.title = label;
         toolbox.nxtSidebarToggle_.setAttribute('aria-label', label);
         toolbox.nxtSidebarToggle_.setAttribute('aria-expanded', String(!toolbox.nxtSidebarCollapsed_));
@@ -116,6 +125,19 @@
             var button = document.createElement('button');
             button.type = 'button';
             button.className = 'nxtSidebarToggle';
+            var icon = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+            icon.setAttribute('viewBox', '0 0 24 24');
+            icon.setAttribute('aria-hidden', 'true');
+            icon.setAttribute('focusable', 'false');
+            var chevron = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+            chevron.setAttribute('fill', 'none');
+            chevron.setAttribute('stroke', 'currentColor');
+            chevron.setAttribute('stroke-width', '2.5');
+            chevron.setAttribute('stroke-linecap', 'round');
+            chevron.setAttribute('stroke-linejoin', 'round');
+            icon.appendChild(chevron);
+            button.appendChild(icon);
+            this.nxtSidebarChevron_ = chevron;
             button.addEventListener('mousedown', function (event) { event.stopPropagation(); });
             button.addEventListener('click', function (event) {
                 event.stopPropagation();
