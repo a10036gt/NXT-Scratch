@@ -31,7 +31,7 @@
         '}'
     ].join('\n');
     style.textContent += [
-        '.nxtSidebarToggle { position: absolute; bottom: 12px; left: 2px; width: 36px; height: 36px;',
+        '.nxtSidebarToggle { position: absolute; bottom: 12px; left: 12px; width: 36px; height: 36px;',
         '  border: none; border-radius: 50%; padding: 0; margin: 0; background: transparent;',
         '  box-shadow: none; cursor: pointer; z-index: 2; line-height: 0;',
         '  -webkit-appearance: none; appearance: none; }',
@@ -39,6 +39,7 @@
         '  outline: none; box-shadow: none; transform: none; background: transparent; }',
         '.nxtSidebarToggle svg { display: block; width: 36px; height: 36px; pointer-events: none; }',
         '.blocklyToolboxDiv.nxtSidebarCollapsible .scratchCategoryMenu { padding-bottom: 56px; }',
+        '.blocklyToolboxDiv.nxtSidebarCollapsed { overflow: visible; background: transparent; }',
         '.blocklyToolboxDiv.nxtSidebarCollapsed .scratchCategoryMenu { display: none; }'
     ].join('\n');
     document.head.appendChild(style);
@@ -77,7 +78,7 @@
         if (this.horizontalLayout_ || !this.flyout_) {
             return originalToolboxWidth.call(this);
         }
-        return this.nxtSidebarCollapsed_ ? 40 : categoryWidth(this) + this.flyout_.getWidth();
+        return this.nxtSidebarCollapsed_ ? 0 : categoryWidth(this) + this.flyout_.getWidth();
     };
 
     var originalReflow = Blockly.VerticalFlyout.prototype.reflowInternal_;
@@ -157,7 +158,7 @@
         }
         this.HtmlDiv.classList.add('nxtSidebarCollapsible');
         this.HtmlDiv.classList.toggle('nxtSidebarCollapsed', !!this.nxtSidebarCollapsed_);
-        this.HtmlDiv.style.width = (this.nxtSidebarCollapsed_ ? 40 : CATEGORY_WIDTH) + 'px';
+        this.HtmlDiv.style.width = (this.nxtSidebarCollapsed_ ? 0 : CATEGORY_WIDTH) + 'px';
         this.flyout_.svgGroup_.style.display = this.nxtSidebarCollapsed_ ? 'none' : '';
         updateToggle(this);
     };
