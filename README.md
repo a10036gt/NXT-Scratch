@@ -144,6 +144,19 @@ var I18N_LANG_DISPLAY = {
 
 *Internationalization js can be found and packaged in package.nw (Using 7-zip to packaged or extract). If you want to submit your translation to the official version, please create a pull request.
 
+## Sidebar layout integration
+
+`sidebar-layout.js` widens the vertical category navigation to 140 pixels and allows category labels to wrap. The block palette starts at 360 pixels and grows with the rendered blocks, while reserving space for the programming workspace. A keyboard-accessible arrow button completely hides both categories and the palette, leaving only the bottom-left toggle over the workspace; pressing it again restores the selection. Workspace metrics resize with the sidebar, preserving program block coordinates.
+
+To include it in the desktop application, copy `sidebar-layout.js` to `app/assets/sidebar-layout.js` inside `package.nw`. In `app/index.html`, load it after Blockly and immediately before `app.min.js`:
+
+```html
+<script src="./assets/sidebar-layout.js"></script>
+<script src="./app.min.js"></script>
+```
+
+The script targets the Scratch Blocks implementation shipped with NXT:Scratch v1.4. It uses ES5 syntax for the bundled NW.js runtime. Horizontal toolboxes retain their existing layout. This repository does not include the application HTML or its build pipeline, so the script reference must be added when packaging the application.
+
 ## 🤝 Contributing
 - 🐛 Report bugs and issues
 - 💡 Suggest new features
