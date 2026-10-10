@@ -3,7 +3,9 @@
 
 var I18N_LANG_DISPLAY = {
     'en': 'English',
-    'zh-tw': '繁體中文'
+    'zh-tw': '繁體中文',
+    'de': 'Deutsch',
+    'fr': 'Français'
 };
 
 var I18N_TRANSLATIONS = {
@@ -172,5 +174,171 @@ var I18N_TRANSLATIONS = {
         'loading': 'Loading...',
         'scratchLoading': 'Scratch Blocks loading...\nPlease ensure network connection is normal',
         'bytes': 'bytes'
+    },
+    'de': {
+        // Menu bar
+        'menu.title': 'NXT:Scratch',
+        'menu.sampleRobot': 'Beispielroboter',
+        'menu.newFile': 'Neue Datei',
+        'menu.saveFile': 'Datei speichern',
+        'menu.openFile': 'Datei öffnen',
+        'menu.about': 'Über NXT:Scratch',
+
+        // Floating toolbar
+        'toolbar.nxtStatus': 'NXT-Status',
+        'toolbar.codeEditor': 'Code-Editor ein-/ausblenden',
+        'toolbar.download': 'Auf den NXT übertragen',
+        'toolbar.run': 'Übertragen und ausführen',
+
+        // MyBlock Editor
+        'myblock.title': 'Editor für eigene Blöcke',
+        'myblock.addNumber': '+ Zahl',
+        'myblock.addStringOnly': '+ Zeichenkette',
+        'myblock.addBoolean': '+ Wahrheitswert',
+        'myblock.addLabel': '+ Beschriftung',
+        'myblock.cancel': 'Abbrechen',
+        'myblock.confirm': 'Bestätigen',
+
+        // Error window
+        'error.title': 'Fehler',
+        'error.close': 'Schließen',
+
+        // Code editor
+        'code.title': 'NXC-Code',
+
+        // NXT Status panel
+        'status.title': 'NXT-Status',
+        'status.notConnected': 'Der NXT-Stein ist nicht verbunden.',
+        'status.driverInstalled': '- Ist der NXT-Treiber installiert? (Wir empfehlen die Installation von EV3 Lab.)',
+        'status.deviceRecognized': '- Wurde das USB-Gerät erkannt? Falls nicht, starte den NXT-Stein neu. Läuft noch andere Software (NXT-G, EV3-G, BricxCC)?',
+        'status.brickName': 'Name des NXT-Steins:',
+        'status.batteryVoltage': 'Batteriespannung:',
+        'status.connectionStatus': 'Verbindungsstatus:',
+        'status.firmwareVersion': 'Firmwareversion:',
+        'status.protocolVersion': 'Protokollversion:',
+        'status.bluetoothAddress': 'Bluetooth-Adresse:',
+        'status.bluetoothSignal': 'Bluetooth-Signal:',
+        'status.availableMemory': 'Verfügbarer Speicher:',
+        'status.connected': 'Verbunden',
+        'status.renameNXT': 'NXT umbenennen',
+        'status.fileManager': 'Dateiverwaltung',
+        'status.screenCapture': 'Bildschirmaufnahme',
+
+        // Notifications
+        'notify.projectSaved': 'Projekt gespeichert!',
+        'notify.projectLoaded': 'Projekt geladen!',
+        'notify.newProjectCreated': 'Neues Projekt erstellt!',
+        'notify.downloadAndRunOK': 'Übertragung und Ausführung erfolgreich!',
+        'notify.downloadOK': 'Übertragung erfolgreich!',
+        'notify.codeDownloaded': 'Code übertragen',
+        'notify.saveFailed': 'Speichern fehlgeschlagen!',
+        'notify.loadFailed': 'Laden fehlgeschlagen: ',
+        'notify.downloadFailed': 'Übertragung fehlgeschlagen',
+        'notify.programRunning': 'Programm wird ausgeführt',
+        'notify.needNWJS': 'NW.js-Umgebung erforderlich',
+
+        // Dialogs
+        'dialog.newProjectConfirm': 'Neues Projekt erstellen? Deine aktuelle Arbeit geht verloren.',
+        'dialog.unsavedWork': 'Du hast ungespeicherte Änderungen. Möchtest du das Programm ohne Speichern schließen?',
+        'dialog.renamePrompt': 'Gib einen neuen NXT-Namen ein (Buchstaben, Zahlen, -, _, höchstens 8 Zeichen):',
+        'dialog.invalidFormat': 'Ungültiges Format!',
+        'dialog.invalidName': 'Ungültiger Name: ',
+        'dialog.duplicateName': 'Name bereits vorhanden: ',
+        'dialog.invalidFunctionName': 'Ungültiger Funktionsname: ',
+
+        // Error messages
+        'error.workspaceNotInit': 'Der Arbeitsbereich wurde nicht initialisiert.',
+        'error.invalidFormat': 'Ungültiges Format',
+        'error.compilationError': 'Kompilierung',
+        'error.systemError': 'System',
+        'error.checkList': 'Prüfe:\n1. Den Status von nbc.exe.\n2. Den Status von NeXTTool.exe.\n3. Die Verbindung zum NXT-Stein.\n4. Ob der Code Fehler enthält.',
+
+        // Others
+        'loading': 'Wird geladen...',
+        'scratchLoading': 'Scratch Blocks wird geladen...\nBitte prüfe die Netzwerkverbindung.',
+        'bytes': 'Bytes'
+    },
+    'fr': {
+        // Menu bar
+        'menu.title': 'NXT:Scratch',
+        'menu.sampleRobot': 'Exemple de robot',
+        'menu.newFile': 'Nouveau fichier',
+        'menu.saveFile': 'Enregistrer le fichier',
+        'menu.openFile': 'Ouvrir un fichier',
+        'menu.about': 'À propos',
+
+        // Floating toolbar
+        'toolbar.nxtStatus': 'État du NXT',
+        'toolbar.codeEditor': 'Afficher/masquer l’éditeur de code',
+        'toolbar.download': 'Transférer vers le NXT',
+        'toolbar.run': 'Transférer et exécuter',
+
+        // MyBlock Editor
+        'myblock.title': 'Éditeur de blocs personnalisés',
+        'myblock.addNumber': '+ Nombre',
+        'myblock.addStringOnly': '+ Chaîne de caractères',
+        'myblock.addBoolean': '+ Booléen',
+        'myblock.addLabel': '+ Étiquette',
+        'myblock.cancel': 'Annuler',
+        'myblock.confirm': 'Confirmer',
+
+        // Error window
+        'error.title': 'Erreur',
+        'error.close': 'Fermer',
+
+        // Code editor
+        'code.title': 'Code NXC',
+
+        // NXT Status panel
+        'status.title': 'État du NXT',
+        'status.notConnected': 'La brique NXT n’est pas connectée.',
+        'status.driverInstalled': '- Le pilote NXT est-il installé ? (Nous recommandons d’installer le logiciel EV3 Lab.)',
+        'status.deviceRecognized': '- Le périphérique USB a-t-il été reconnu ? Sinon, redémarrez votre brique NXT. Un autre logiciel est-il en cours d’exécution (NXT-G, EV3-G, BricxCC) ?',
+        'status.brickName': 'Nom de la brique NXT :',
+        'status.batteryVoltage': 'Tension de la batterie :',
+        'status.connectionStatus': 'État de la connexion :',
+        'status.firmwareVersion': 'Version du micrologiciel :',
+        'status.protocolVersion': 'Version du protocole :',
+        'status.bluetoothAddress': 'Adresse Bluetooth :',
+        'status.bluetoothSignal': 'Signal Bluetooth :',
+        'status.availableMemory': 'Mémoire disponible :',
+        'status.connected': 'Connecté',
+        'status.renameNXT': 'Renommer le NXT',
+        'status.fileManager': 'Gestionnaire de fichiers',
+        'status.screenCapture': 'Capture d’écran',
+
+        // Notifications
+        'notify.projectSaved': 'Projet enregistré !',
+        'notify.projectLoaded': 'Projet chargé !',
+        'notify.newProjectCreated': 'Nouveau projet créé !',
+        'notify.downloadAndRunOK': 'Transfert et exécution réussis !',
+        'notify.downloadOK': 'Transfert réussi !',
+        'notify.codeDownloaded': 'Code transféré',
+        'notify.saveFailed': 'Échec de l’enregistrement !',
+        'notify.loadFailed': 'Échec du chargement : ',
+        'notify.downloadFailed': 'Échec du transfert',
+        'notify.programRunning': 'Le programme est en cours d’exécution',
+        'notify.needNWJS': 'L’environnement NW.js est requis',
+
+        // Dialogs
+        'dialog.newProjectConfirm': 'Créer un nouveau projet ? Le travail en cours sera perdu.',
+        'dialog.unsavedWork': 'Des modifications n’ont pas été enregistrées. Voulez-vous fermer sans enregistrer ?',
+        'dialog.renamePrompt': 'Saisissez un nouveau nom pour le NXT (lettres, chiffres, -, _, 8 caractères maximum) :',
+        'dialog.invalidFormat': 'Format non valide !',
+        'dialog.invalidName': 'Nom non valide : ',
+        'dialog.duplicateName': 'Ce nom existe déjà : ',
+        'dialog.invalidFunctionName': 'Nom de fonction non valide : ',
+
+        // Error messages
+        'error.workspaceNotInit': 'L’espace de travail n’est pas initialisé.',
+        'error.invalidFormat': 'Format non valide',
+        'error.compilationError': 'Compilation',
+        'error.systemError': 'Système',
+        'error.checkList': 'Vérifiez :\n1. L’état de nbc.exe.\n2. L’état de NeXTTool.exe.\n3. La connexion de la brique NXT.\n4. La présence d’erreurs dans le code.',
+
+        // Others
+        'loading': 'Chargement...',
+        'scratchLoading': 'Chargement de Scratch Blocks...\nVeuillez vérifier la connexion réseau.',
+        'bytes': 'octets'
     }
 };
